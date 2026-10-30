@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "sealy-seals",
+	"version": "${version}",
+	"name": "Sealy Seals",
+	"description": "A mod about fish-hungry and bouncy fellas!",
+	"authors": [
+		"Jiredev!"
+	],
+	"contact": {
+		"homepage": "https://jiredev.com/",
+		"sources": ""
+	},
+	"license": "MIT-license",
+	"icon": "assets/sealy-seals/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.jiredev.sealyseals.SealySeals"
+		],
+		"fabric-datagen": [
+			"com.jiredev.sealyseals.SealySealsDataGenerator"
+		]
+	},
+	"mixins": [
+		"sealy-seals.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
